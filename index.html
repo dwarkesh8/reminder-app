@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reminder App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="text-center mb-4">Set Reminder</h2>
+        <form id="reminderForm">
+          <div class="form-group">
+            <label for="reminderDate">Date</label>
+            <input type="date" id="reminderDate" class="form-control" value="">
+          </div>
+          <div class="form-group">
+            <label for="reminderTime">Time</label>
+            <input type="time" id="reminderTime" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="intervalMinutes">Interval Minutes (Optional)</label>
+            <input type="number" id="intervalMinutes" class="form-control" min="1" placeholder="Enter interval in minutes">
+          </div>
+          <button type="submit" class="btn btn-primary mt-3">Set Reminder</button>
+        </form>
+        <div id="countdown"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
